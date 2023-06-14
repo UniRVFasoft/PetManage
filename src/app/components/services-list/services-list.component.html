@@ -1,0 +1,33 @@
+<h1>Serviços</h1>
+
+<div class="all-lists">
+  <div class="list-pending-services list-services" *ngIf="pendingServices.length !== 0">
+    <h2 class="service-status-title">Serviços Pendentes</h2>
+
+    <ol>
+      <li class="service" *ngFor="let service of pendingServices">
+        <h3 class="service-title">Serviço: {{service.title}}</h3>
+        <p class="service-customer">Cliente: {{service.customer}}</p>
+        <p class="service-animal">Animal: {{service.animal}}</p>
+        <p class="service-animal-name">Nome do pet: {{service.animalName}}</p>
+        <p class="service-employee">Responsável pelo serviço: {{service.employee}}</p>
+        <p class="service-date">Criado em: {{service.created}}</p>
+      </li>
+    </ol>
+  </div>
+
+  <div class="list-completed-services list-services" *ngIf="completedServices.length !== 0">
+    <h2 class="service-status-title">Serviços Concluídos</h2>
+
+    <ol>
+      <li class="service" *ngFor="let service of completedServices">
+        <h3 class="service-title">Serviço: {{service.title}}</h3>
+        <p class="service-customer">Cliente: {{service.customer}}</p>
+        <p class="service-animal">Animal: {{service.animal}}</p>
+        <p class="service-animal-name">Nome do pet: {{service.animalName}}</p>
+        <p class="service-employee">Responsável pelo serviço: {{service.employee}}</p>
+        <p class="service-date">Criado em: {{service.created}}</p>
+      </li>
+    </ol>
+  </div>
+</div>

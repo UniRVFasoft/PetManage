@@ -1,0 +1,34 @@
+header {
+  background-color: #6ED7EF;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 10rem 80rem 10rem 40rem;
+  border-bottom: 1px solid #000;
+}
+
+.logo,
+nav {
+  font-size: 32rem;
+  font-weight: 700;
+  color: #FFF;
+}
+
+nav {
+  display: flex;
+  gap: 60rem;
+
+  list-style: none;
+}
+
+nav a {
+  font-size: 20rem;
+  text-decoration: none;
+  color: #FFF;
+}
+
+nav a:hover {
+  color: #b8faff;
+}
