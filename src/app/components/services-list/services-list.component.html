@@ -1,11 +1,12 @@
 <h1>Serviços</h1>
 
 <div class="all-lists">
-  <div class="list-pending-services list-services" *ngIf="pendingServices.length !== 0">
+  <!-- *ngIf="pendingServices.length !== 0" -->
+  <div class="list-pending-services list-services">
     <h2 class="service-status-title">Serviços Pendentes</h2>
 
-    <ol>
-      <li class="service" *ngFor="let service of pendingServices">
+    <ol *ngFor="let service of allServices">
+      <li class="service">
         <h3 class="service-title">Serviço: {{service.title}}</h3>
         <p class="service-customer">Cliente: {{service.customer}}</p>
         <p class="service-animal">Animal: {{service.animal}}</p>
@@ -16,7 +17,7 @@
     </ol>
   </div>
 
-  <div class="list-completed-services list-services" *ngIf="completedServices.length !== 0">
+  <!-- <div class="list-completed-services list-services" *ngIf="completedServices.length !== 0">
     <h2 class="service-status-title">Serviços Concluídos</h2>
 
     <ol>
@@ -29,5 +30,5 @@
         <p class="service-date">Criado em: {{service.created}}</p>
       </li>
     </ol>
-  </div>
+  </div> -->
 </div>
