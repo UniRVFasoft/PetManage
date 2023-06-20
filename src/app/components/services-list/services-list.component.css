@@ -44,3 +44,41 @@ ol {
 .p {
   font-size: 18rem;
 }
+
+.square {
+  width: 400px;
+  height: 400px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.square img {
+  width: 390px;
+  height: 310px;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+h2 {
+  font-size: 18rem;
+  margin-left: 5px;
+}
+
+h3 {
+  font-size: 18rem;
+  margin-left: 5px;
+}
+
+.first-line {
+  display: flex;
+  gap: 100px;
+}
+
+.remaining-lines {
+  flex-direction: column;
+}
+
+.all {
+  max-width: 800px;
+}

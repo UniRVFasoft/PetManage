@@ -27,7 +27,7 @@ export class ServicesListComponent implements OnInit {
 
 	ngOnInit(): void {
 		this.serviceAPI.getServices().subscribe((services) => {
-			this.allServices = services
+			// this.allServices = services
 		})
 	}
 
