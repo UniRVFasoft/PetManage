@@ -8,7 +8,8 @@ import { HeaderComponent } from './components/header/header.component'
 import { FooterComponent } from './components/footer/footer.component'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { ServicesListComponent } from './components/services-list/services-list.component'
-import { SchedulingComponent } from './components/scheduling/scheduling.component'
+import { SchedulingComponent } from './components/scheduling/scheduling.component';
+import { ServiceComponent } from './components/service/service.component'
 
 @NgModule({
 	declarations: [
@@ -17,6 +18,7 @@ import { SchedulingComponent } from './components/scheduling/scheduling.componen
 		FooterComponent,
 		ServicesListComponent,
 		SchedulingComponent,
+  ServiceComponent,
 	],
 	imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, HttpClientModule],
 	providers: [ServicesListComponent],
