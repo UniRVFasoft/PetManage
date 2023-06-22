@@ -2,42 +2,70 @@
 
 <div class = "all">
   <div class = "square">
-    <img src="../../assets/images/fred.jpg" alt="Imagem"> 
-
-    <div class = "first-line">
-      <h2>nome do bixo: fred</h2>
-      <h3>horário marcado</h3>
+    <a routerLink="/service">
+      <img src="../../assets/images/fred.jpg" alt="Imagem"> 
+    </a>
+    <div class = "line2">
+      <p>Nome do bixo: fred</p>
+      <p>Horário: 15:00</p>
     </div>
-    
-    <div class = "remaining-lines">
-      <h2>valor do serviço</h2>
-      <h2>tipo do serviço</h2>
-    </div>    
+      <p>Valor do serviço: 100R$</p>
+    <div class="line2">
+      <p>Tipo do serviço: banho</p>     
+      <p class="status">PENDENTE</p> 
+    </div>      
   </div>
   
   <div class = "square">
-    <img src="../../assets/images/fred.jpg" alt="Imagem"> 
-    <h2>nome do serviço</h2>
-    <h2>valor do serviço</h2>
+    <a routerLink="/service">
+      <img src="../../assets/images/fred.jpg" alt="Imagem"> 
+    </a>
+    <div class = "line2">
+      <p>Nome do bixo: fred</p>
+      <p>Horário: 15:00</p>
+    </div>
+      <p>Valor do serviço: 100R$</p>
+    <div class="line2">
+      <p>Tipo do serviço: banho</p>     
+      <p class="status">PENDENTE</p> 
+    </div>      
   </div>
 
   <div class = "square">
-    <img src="../../assets/images/fred.jpg" alt="Imagem"> 
-    <h2>nome do serviço</h2>
-    <h2>valor do serviço</h2>
+    <a routerLink="/service">
+      <img src="../../assets/images/fred.jpg" alt="Imagem"> 
+    </a>
+    <div class = "line2">
+      <p>Nome do bixo: fred</p>
+      <p>Horário: 15:00</p>
+    </div>
+      <p>Valor do serviço: 100R$</p>
+    <div class="line2">
+      <p>Tipo do serviço: banho</p>     
+      <p class="status">PENDENTE</p> 
+    </div>      
   </div>
   
   <div class = "square">
-    <img src="../../assets/images/fred.jpg" alt="Imagem"> 
-    <h2>nome do serviço</h2>
-    <h2>valor do serviço</h2>
+    <a routerLink="/service">
+      <img src="../../assets/images/fred.jpg" alt="Imagem"> 
+    </a>
+    <div class = "line2">
+      <p>Nome do bixo: fred</p>
+      <p>Horário: 15:00</p>
+    </div>
+      <p>Valor do serviço: 100R$</p>
+    <div class="line2">
+      <p>Tipo do serviço: banho</p>     
+      <p class="status">PENDENTE</p> 
+    </div>      
   </div>
 </div>
 
 <!-- <div class="all-lists">
   *ngIf="pendingServices.length !== 0"
   <div class="list-pending-services list-services">
-    <h2 class="service-status-title">Serviços Pendentes</h2>
+    <p class="service-status-title">Serviços Pendentes</p>
 
     <ol *ngFor="let service of allServices">
       <li class="service">
@@ -52,7 +80,7 @@
   </div> 
 
    <div class="list-completed-services list-services" *ngIf="completedServices.length !== 0">
-    <h2 class="service-status-title">Serviços Concluídos</h2>
+    <p class="service-status-title">Serviços Concluídos</p>
 
     <ol>
       <li class="service" *ngFor="let service of completedServices">

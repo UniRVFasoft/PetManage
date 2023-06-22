@@ -1,0 +1,83 @@
+.geral{
+    margin-top: 150px;
+    margin-left: 15px;
+}
+
+
+.dados-cap {
+    flex-wrap: wrap;
+    float: right;
+    font-size: 15rem;  
+}
+
+.dados{    
+    display: flex;  
+    justify-content: space-around; 
+    text-align: left;
+    
+}
+
+p{
+    margin: 10px 20px;
+    width: 200px;
+}
+
+h1{
+    margin: 10px 20px;
+    width: 200px;
+}
+
+
+.button-1, .button-2 {
+    border: none; /* Sem borda */
+    color: white; /* Cor do texto */
+    padding: 15px 32px; /* Espaçamento interno (vertical horizontal) */
+    text-align: center; /* Alinhamento do texto */
+    text-decoration: none; /* Sem decoração de texto */
+    display: inline-block; /* Exibir como um bloco */
+    font-size: 16px; /* Tamanho da fonte */
+    margin: 10px 25px; /* Espaçamento externo (vertical horizontal) */
+    cursor: pointer; /* Cursor de ponteiro ao passar por cima */
+    border-radius: 100px;
+  }
+  
+  .button-1{
+    background-color: #09F23C; /* Cor de fundo */
+  }
+  /* Estilo do botão quando passa o mouse por cima */
+  .button-1:hover {
+    background-color: #45a049;
+  }
+  
+  /* Estilo do botão quando pressionado */
+  .button-1:active {
+    background-color: #3e8e41;
+  }
+
+  .button-2{
+    background-color: #f20909; /* Cor de fundo */
+  }
+    /* Estilo do botão quando passa o mouse por cima */
+    .button-2:hover {
+        background-color: #a04545;
+      }
+      
+      /* Estilo do botão quando pressionado */
+      .button-2:active {
+        background-color: #8e3e3e;
+      }
+
+.imagem-cap{
+    float: left;
+    background-color: white;
+    border: 1px solid #000000;
+    padding: 5px 5px 5px 5px;
+    border-radius: 10px;
+}
+
+.imagem{
+    width: 300px;
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 10px; 
+}
