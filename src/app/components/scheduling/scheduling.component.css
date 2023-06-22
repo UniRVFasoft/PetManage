@@ -1,7 +1,30 @@
+.icon-imagem-tot{
+    display: flex;
+    align-items: center;
+}
+
+.icon{
+    text-align: center; 
+    padding: 50px;
+    justify-content: space-between;
+    max-width: 300px;
+    min-width: 300px;
+}
+
+.titulo-2{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 40px;
+    color: #000000;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    width: 700px;
+}
+
 p{
     font-size: 18px;
     margin: 10px 20px;
-    width: 500px;
 }
 
 h2{
@@ -19,32 +42,19 @@ h1{
     width: 500px;
 }
 
-.titulo-2{
-    text-align: center;
-    font-size: 40px;
-    color: #000000;
-    margin-top: 150px;
-    margin-bottom: 50px;
-    width: 700px;
-}
+
 
 .geral{
-    flex-wrap: nowrap;
-    margin-top: 150px;
-    margin-left: 20px;
-}
-
-.dados{    
-    display: flex;  
-    justify-content: space-around; 
-    text-align: left;
-    flex-wrap: wrap; 
-    
+    margin-top: 100px;
 }
 
 .dados-cap{
-    padding: 5px 5px 5px 5px;
+    
+    padding: 50px 5px 5px 5px;
     border-radius: 10px;
+    display: flex;  
+    justify-content: center; 
+    text-align: left;
 }
 
 .imagem-cap{
@@ -54,33 +64,10 @@ h1{
     border-radius: 10px;
 }
 
-
-
 .imagem{
-    width: 300px;
-    max-width: 300px;
-    max-height: 300px;
+    width: 500px;
+    max-width: 500px;
+    max-height: 500px;
     border-radius: 10px; 
 }
 
-.icon{
-    flex-direction: column;
-}
-.icon-imagem{
-    margin-left: 40px;
-    margin-right: 40px;
-    width: 60px;
-    max-width: 60px;
-    max-height: 60px;
-    border-radius: 10px;  
-}
-
-.icon-text{
-    display: flex;  
-    margin-left: 40px;
-    margin-right: 40px;
-    width: 60px;
-    max-width: 60px;
-    max-height: 60px;
-    border-radius: 10px; 
-}
