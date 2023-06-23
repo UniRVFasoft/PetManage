@@ -76,6 +76,8 @@ h1{
 }
 
 .imagem{
+  border: 10px inset #6ED7EF;
+  border-radius: 10px;
   width: 500px;
   height: auto;
   object-fit: cover;
