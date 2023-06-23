@@ -5,26 +5,26 @@ header {
   justify-content: space-between;
   align-items: center;
 
-  padding: 10rem 80rem 10rem 40rem;
+  padding: 10px 80px 10px 40px;
   border-bottom: 1px solid #000;
 }
 
 .logo,
 nav {
-  font-size: 32rem;
+  font-size: 32px;
   font-weight: 700;
   color: #FFF;
 }
 
 nav {
   display: flex;
-  gap: 60rem;
+  gap: 60px;
 
   list-style: none;
 }
 
 nav a {
-  font-size: 20rem;
+  font-size: 20px;
   text-decoration: none;
   color: #FFF;
 }
