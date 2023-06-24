@@ -1,0 +1,89 @@
+.example-additional-selection {
+  opacity: 0.75;
+  font-size: 0.75em;
+}
+
+.no-scroll::-webkit-inner-spin-button,
+.no-scroll::-webkit-outer-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.no-scroll {
+  -moz-appearance: textfield;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.service,
+.pet,
+.tutor {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+
+  color: #FFF;
+
+  margin-bottom: 40px;
+}
+
+mat-card-subtitle {
+  margin-bottom: 8px;
+}
+
+.cost span {
+  color: #969696;
+}
+
+.divider-x {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+}
+
+.divider-y {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+mat-card {
+  padding: 20px;
+
+  width: 100%;
+  max-width: 70%;
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+.color-field {
+  height: 78px;
+}
+
+.additional-info {
+  height: 100%;
+}
+
+mat-label {
+  color: #ADADAD;
+}
+
+mat-hint {
+  color: #fff;
+
+  width: 100%;
+
+  display: flex;
+  justify-content: end;
+}

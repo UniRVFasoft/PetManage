@@ -1,18 +1,24 @@
 footer {
-  background-color: #6ED7EF;
+  background-color: var(--bg-primary);
 
   display: flex;
   justify-content: center;
   align-items: center;
 
-  font-size: 14rem;
+  font-size: 12px;
   font-weight: 700;
   color: #FFF;
 
-  padding: 5rem 0;
+  padding: 5px 0;
 
   position: fixed;
   bottom: 0;
 
   width: 100%;
+
+  box-shadow: -5px -5px 15px rgba(0, 0, 0, 0.35);
+}
+
+p {
+  margin: 0;
 }
