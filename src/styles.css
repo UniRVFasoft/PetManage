@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* font-size: 6.25%; */
+
+  --bg-primary: #c2185b;
+  --secondary: #b0bec5;
+  --bg-secondary: #303030;
+}
+
+body {
+  background-color: var(--bg-secondary);
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  height: 100vh;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.mat-mdc-form-field-bottom-align::before {
+  display: none;
+  content: none;
+}
+
+app-scheduling {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}

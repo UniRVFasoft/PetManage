@@ -1,0 +1,81 @@
+h1 {
+  display: flex;
+  justify-content: center;
+
+  font-size: 28px;
+
+  margin: 25px 0;
+}
+
+.all-lists {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.list-services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  min-width: 800px;
+}
+
+.service-status-title {
+  font-size: 22px;
+}
+
+ol {
+  list-style: none;
+
+  margin: 20px 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.service {
+  font-size: 14px;
+}
+
+.square {
+  background-color: white;
+  border: 1px solid black;
+  padding: 5px 5px 10px 5px;
+}
+
+.square img {
+  width: 390px;
+  height: 310px;
+  object-fit: cover;
+}
+
+.all {
+  max-width: 1500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 100px;
+  margin: 25px 0;
+}
+
+p {
+  font-size: 16px;
+  padding: 2.5px;
+}
+
+.line2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.status {
+  font-size: 20px;
+  color: gray;
+  margin-right: 5px;
+  border: 2px solid gray;
+}
