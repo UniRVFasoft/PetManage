@@ -22,4 +22,3 @@ export class ServicesListComponent implements OnInit {
 		})
 	}
 }
-export { Service }
