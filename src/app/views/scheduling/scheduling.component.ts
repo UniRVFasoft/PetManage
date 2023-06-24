@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core'
 import { SchedulingService } from './scheduling.service'
 import { FormControl } from '@angular/forms'
 import { Router } from '@angular/router'
+import { Service } from 'src/app/interfaces/service'
 
 @Component({
 	selector: 'app-scheduling',
@@ -37,7 +38,24 @@ export class SchedulingComponent implements OnInit {
 	colors: string[] = ['Amarelo', 'Branco', 'Caramelo', 'Preto', 'Cinza', 'Ruivo', 'Marrom']
 
 	createService(): void {
-		this.schedulingService.showMessage('Serviços Agendados com sucesso!')
+		this.schedulingService.create(this.scheduling).subscribe(() => {
+			this.schedulingService.showMessage('Serviços Agendados com sucesso!')
+			this.router.navigate(['/services-list'])
+		})
+	}
+
+	scheduling: Service = {
+		services: [],
+		service_cost: null,
+		tutor_name: '',
+		tutor_address: '',
+		pet_name: '',
+		pet_gender: '',
+		pet_age: null,
+		pet_size: '',
+		pet_color: [],
+		additional_info: '',
+		created_at: new Date(),
 	}
 
 	cancel(): void {
