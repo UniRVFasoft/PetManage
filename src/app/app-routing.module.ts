@@ -10,7 +10,7 @@ const routes: Routes = [
 	{ path: '', component: HomeComponent },
 	{ path: 'scheduling', component: SchedulingComponent },
 	{ path: 'services-list', component: ServicesListComponent },
-	{ path: 'service', component: ServiceComponent },
+	{ path: 'services-list/:id', component: ServiceComponent },
 ]
 
 @NgModule({

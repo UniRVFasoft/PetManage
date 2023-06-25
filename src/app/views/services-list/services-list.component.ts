@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core'
-import { ServiceAPI } from './services-list.service'
+import { ServicesAPI } from './services-list.service'
 import { Service } from 'src/app/interfaces/service'
 import { SchedulingComponent } from '../scheduling/scheduling.component'
 
@@ -15,10 +15,10 @@ import { SchedulingComponent } from '../scheduling/scheduling.component'
 export class ServicesListComponent implements OnInit {
 	public allServices: Service[] = []
 
-	constructor(private serviceAPI: ServiceAPI) {}
+	constructor(private servicesAPI: ServicesAPI) {}
 
 	ngOnInit(): void {
-		this.serviceAPI.getServices().subscribe((services) => {
+		this.servicesAPI.getServices().subscribe((services) => {
 			this.allServices = services
 		})
 	}

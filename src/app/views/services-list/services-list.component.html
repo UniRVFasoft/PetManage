@@ -4,7 +4,7 @@
 
   <ol *ngFor="let service of allServices">
     <li class="service">
-      <a routerLink="/service">
+      <a routerLink="['/services-list/','{{service.id}}']">
         <img src="{{service.pet_image}}" alt="Imagem">
       </a>
 

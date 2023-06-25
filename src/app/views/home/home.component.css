@@ -79,7 +79,7 @@ h2 {
 
 h1 {
   font-size: 60px;
-  color: #6ED7EF;
+  color: var(--bg-primary);
   margin: 10px 20px;
   width: 500px;
 }
@@ -104,8 +104,18 @@ h1 {
 
 .imagem-cap {
   background-color: rgb(255, 255, 255);
-  padding: 5px 5px 5px 5px;
+  padding: 5px;
   border-radius: 10px;
+}
+
+.higiene {
+  font-size: 27px;
+  color: var(--bg-primary);
+}
+
+.titulo-card {
+  font-size: 20px;
+  color: var(--bg-primary);
 }
 
 .imagem {

@@ -1,5 +1,5 @@
 export interface Service {
-	id?: number
+	id?: string
 	services: string[]
 	service_cost: number | null
 	tutor_name: string

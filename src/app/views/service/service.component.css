@@ -1,8 +1,18 @@
-.geral {
-  margin-top: 150px;
-  margin-left: 15px;
+.card {
+  margin-top: 25px;
+  padding: 22px;
+  border-radius: 5px;
+
+  background-color: #fff;
 }
 
+img {
+  width: 560px;
+  height: 480px;
+  object-fit: cover;
+
+  border-radius: 10px;
+}
 
 .dados-cap {
   max-width: 500px;
@@ -55,15 +65,12 @@ h1 {
 
 .button-1 {
   background-color: #09F23C;
-  /* Cor de fundo */
 }
 
-/* Estilo do botão quando passa o mouse por cima */
 .button-1:hover {
   background-color: #45a049;
 }
 
-/* Estilo do botão quando pressionado */
 .button-1:active {
   background-color: #3e8e41;
 }
@@ -81,20 +88,4 @@ h1 {
 /* Estilo do botão quando pressionado */
 .button-2:active {
   background-color: #8e3e3e;
-}
-
-.imagem-cap {
-  float: left;
-  background-color: white;
-  border-radius: 10px;
-}
-
-.imagem {
-  border: 10px inset #6ED7EF;
-  border-radius: 10px;
-  width: 500px;
-  height: auto;
-  object-fit: cover;
-  aspect-ratio: 1/1;
-  /* Define a proporção de 1:1 (quadrado) */
 }

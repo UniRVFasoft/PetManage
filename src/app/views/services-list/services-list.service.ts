@@ -3,12 +3,11 @@ import { HttpClient } from '@angular/common/http'
 
 //Interfaces
 import { Service } from 'src/app/interfaces/service'
-import { Observable } from 'rxjs'
 
 @Injectable({
 	providedIn: 'root',
 })
-export class ServiceAPI {
+export class ServicesAPI {
 	public dogImageUrl: string = ''
 
 	constructor(private http: HttpClient) {

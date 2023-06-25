@@ -3,7 +3,7 @@ import { SchedulingService } from './scheduling.service'
 import { FormControl } from '@angular/forms'
 import { Router } from '@angular/router'
 import { Service } from 'src/app/interfaces/service'
-import { ServiceAPI } from 'src/app/views/services-list/services-list.service'
+import { ServicesAPI } from 'src/app/views/services-list/services-list.service'
 @Component({
 	selector: 'app-scheduling',
 	templateUrl: './scheduling.component.html',
@@ -13,7 +13,7 @@ export class SchedulingComponent implements OnInit {
 	constructor(
 		private schedulingService: SchedulingService,
 		private router: Router,
-		private serviceAPI: ServiceAPI
+		private servicesAPI: ServicesAPI
 	) {}
 
 	ngOnInit() {}
@@ -41,7 +41,7 @@ export class SchedulingComponent implements OnInit {
 	colorControl = new FormControl('')
 	colors: string[] = ['Amarelo', 'Branco', 'Caramelo', 'Preto', 'Cinza', 'Ruivo', 'Marrom']
 
-	dogImage = this.serviceAPI.dogImageUrl
+	dogImage = this.servicesAPI.dogImageUrl
 
 	scheduling: Service = {
 		services: [],
