@@ -62,10 +62,10 @@ ol {
 
 .status-false,
 .status-true {
-  width: 15px;
-  height: 15px;
+  width: 25px;
+  height: 25px;
 
-  border: 1px solid #000;
+  border: 0.1px solid #000;
   border-radius: 100%;
 }
 
@@ -74,5 +74,5 @@ ol {
 }
 
 .status-true {
-  background-color: greenyellow;
+  background-color: rgb(9, 255, 0);
 }
