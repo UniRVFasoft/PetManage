@@ -9,6 +9,8 @@ export interface Service {
 	pet_age: number | null
 	pet_size: string
 	pet_color: string[]
+	pet_image: string
 	additional_info: string
 	created_at: Date
+	ind_finalizado: boolean
 }

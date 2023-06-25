@@ -1,96 +1,49 @@
 <h1>Serviços</h1>
 
-<div class = "all">
-  <div class = "square">
-    <a routerLink="/service">
-      <img src="../../assets/images/fred.jpg" alt="Imagem"> 
-    </a>
-    <div class = "line2">
-      <p>Nome do bixo: fred</p>
-      <p>Horário: 15:00</p>
-    </div>
-      <p>Valor do serviço: 100R$</p>
-    <div class="line2">
-      <p>Tipo do serviço: banho</p>     
-      <p class="status">PENDENTE</p> 
-    </div>      
-  </div>
-  
-  <div class = "square">
-    <a routerLink="/service">
-      <img src="../../assets/images/fred.jpg" alt="Imagem"> 
-    </a>
-    <div class = "line2">
-      <p>Nome do bixo: fred</p>
-      <p>Horário: 15:00</p>
-    </div>
-      <p>Valor do serviço: 100R$</p>
-    <div class="line2">
-      <p>Tipo do serviço: banho</p>     
-      <p class="status">PENDENTE</p> 
-    </div>      
-  </div>
+<div class="all-lists">
 
-  <div class = "square">
-    <a routerLink="/service">
-      <img src="../../assets/images/fred.jpg" alt="Imagem"> 
-    </a>
-    <div class = "line2">
-      <p>Nome do bixo: fred</p>
-      <p>Horário: 15:00</p>
-    </div>
-      <p>Valor do serviço: 100R$</p>
-    <div class="line2">
-      <p>Tipo do serviço: banho</p>     
-      <p class="status">PENDENTE</p> 
-    </div>      
-  </div>
-  
-  <div class = "square">
-    <a routerLink="/service">
-      <img src="../../assets/images/fred.jpg" alt="Imagem"> 
-    </a>
-    <div class = "line2">
-      <p>Nome do bixo: fred</p>
-      <p>Horário: 15:00</p>
-    </div>
-      <p>Valor do serviço: 100R$</p>
-    <div class="line2">
-      <p>Tipo do serviço: banho</p>     
-      <p class="status">PENDENTE</p> 
-    </div>      
-  </div>
+  <ol *ngFor="let service of allServices">
+    <li class="service">
+      <a routerLink="/service">
+        <img src="{{service.pet_image}}" alt="Imagem">
+      </a>
+
+      <!-- <div class="services">
+        <h3>
+          Serviços:
+        </h3>
+        <div class="services-iteration" *ngFor="let serv of service.services; let last = last">
+          <span class="others">
+            {{serv}}
+          </span>
+          <span class="comma" *ngIf="!last">,</span>
+        </div>
+        <span class="dot">.</span>
+      </div> -->
+
+      <div class="infos">
+        <div class="services">
+          <h3>
+            Serviços:
+            <span>{{ service.services[0] }}</span>
+            <span class="others" *ngIf="service.services.length === 1">(+1 outro)</span>
+            <span class="others" *ngIf="service.services.length > 1">(+{{ service.services.length - 1 }} outros)</span>
+          </h3>
+        </div>
+
+        <p class="service-customer">Cliente: {{service.tutor_name}}</p>
+        <p class="service-animal">Nome do Pet: {{service.pet_name}}</p>
+        <p class="service-animal-name">Valor Total: {{service.service_cost}}</p>
+        <p class="service-date">Criado em: {{service.created_at}}</p>
+        <div class="service-status">
+          <span *ngIf="service.ind_finalizado === false">
+            <div class="status-false"></div>
+          </span>
+          <span *ngIf="service.ind_finalizado === true">
+            <div class="status-true"></div>
+          </span>
+        </div>
+      </div>
+    </li>
+  </ol>
 </div>
-
-<!-- <div class="all-lists">
-  *ngIf="pendingServices.length !== 0"
-  <div class="list-pending-services list-services">
-    <p class="service-status-title">Serviços Pendentes</p>
-
-    <ol *ngFor="let service of allServices">
-      <li class="service">
-        <h3 class="service-title">Serviço: {{service.title}}</h3>
-        <p class="service-customer">Cliente: {{service.customer}}</p>
-        <p class="service-animal">Animal: {{service.animal}}</p>
-        <p class="service-animal-name">Nome do pet: {{service.animalName}}</p>
-        <p class="service-employee">Responsável pelo serviço: {{service.employee}}</p>
-        <p class="service-date">Criado em: {{service.created}}</p>
-      </li>
-    </ol>
-  </div> 
-
-   <div class="list-completed-services list-services" *ngIf="completedServices.length !== 0">
-    <p class="service-status-title">Serviços Concluídos</p>
-
-    <ol>
-      <li class="service" *ngFor="let service of completedServices">
-        <h3 class="service-title">Serviço: {{service.title}}</h3>
-        <p class="service-customer">Cliente: {{service.customer}}</p>
-        <p class="service-animal">Animal: {{service.animal}}</p>
-        <p class="service-animal-name">Nome do pet: {{service.animalName}}</p>
-        <p class="service-employee">Responsável pelo serviço: {{service.employee}}</p>
-        <p class="service-date">Criado em: {{service.created}}</p>
-      </li>
-    </ol>
-  </div> 
-</div> -->

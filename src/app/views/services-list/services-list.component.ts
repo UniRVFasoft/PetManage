@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core'
 import { ServiceAPI } from './services-list.service'
 import { Service } from 'src/app/interfaces/service'
+import { SchedulingComponent } from '../scheduling/scheduling.component'
 
 /**
   @title Lista de todos os serviços
@@ -12,13 +13,13 @@ import { Service } from 'src/app/interfaces/service'
 	styleUrls: ['./services-list.component.css'],
 })
 export class ServicesListComponent implements OnInit {
-	public allServices: Service[] = {} as Service[]
+	public allServices: Service[] = []
 
 	constructor(private serviceAPI: ServiceAPI) {}
 
 	ngOnInit(): void {
 		this.serviceAPI.getServices().subscribe((services) => {
-			// this.allServices = services
+			this.allServices = services
 		})
 	}
 }

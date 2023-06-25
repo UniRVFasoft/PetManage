@@ -9,10 +9,6 @@
   margin: 0;
 }
 
-.no-scroll {
-  -moz-appearance: textfield;
-}
-
 form {
   display: flex;
   flex-direction: column;

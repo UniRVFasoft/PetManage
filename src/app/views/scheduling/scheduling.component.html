@@ -25,7 +25,7 @@
           <mat-form-field appearance="outline" class="cost">
             <mat-label>Valor Total do Serviço</mat-label>
             <input required matInput placeholder="00.00" type="number" class="example-right-align no-scroll"
-              [(ngModel)]="scheduling.service_cost" name="service_cost">
+              [(ngModel)]="scheduling.service_cost" name="service_cost" min="0">
             <span matTextPrefix>R$&nbsp;</span>
           </mat-form-field>
         </div>
@@ -72,7 +72,7 @@
           <mat-form-field appearance="outline">
             <mat-label>Idade</mat-label>
             <input required matInput placeholder="16" type="number" class="no-scroll" [(ngModel)]="scheduling.pet_age"
-              name="pet_age">
+              name="pet_age" min="0">
             <mat-hint>em meses</mat-hint>
           </mat-form-field>
 
@@ -112,6 +112,6 @@
     </div>
   </form>
 
-  <button mat-raised-button (click)="createService()">Agendar</button>
+  <button mat-raised-button type="submit" (click)="createService()">Agendar</button>
   <button mat-raised-button (click)="cancel()">Cancelar</button>
 </mat-card>
