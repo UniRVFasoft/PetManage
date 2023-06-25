@@ -79,3 +79,15 @@ p {
   margin-right: 5px;
   border: 2px solid gray;
 }
+
+.status-finalizado {
+  font-size: 20px;
+  color: green;
+  border: 2px solid green;
+}
+
+.status-agendado {
+  font-size: 20px;
+  color: rgb(187, 187, 15);
+  border: 2px solid rgb(187, 187, 15);
+}

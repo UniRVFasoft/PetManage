@@ -79,7 +79,7 @@ h2 {
 
 h1 {
   font-size: 60px;
-  color: #6ED7EF;
+  color: var(--bg-primary);
   margin: 10px 20px;
   width: 500px;
 }
