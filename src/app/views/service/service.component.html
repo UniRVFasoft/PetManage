@@ -1,29 +1,18 @@
-<div class="card">
-  <img src="../../assets/images/cacau-1.jpeg" alt="Imagem">
+<div class="card" *ngIf="service">
+  <img src="{{service.pet_image}}" alt="Imagem">
 
   <div class="dados-cap">
-    <h1>Cacau</h1>
-    <div class="dados">
-      <p>raça:</p>
-      <p>boxer</p>
-    </div>
-    <div class="dados">
-      <p>Tutor:</p>
-      <p>Pedro</p>
-    </div>
-    <div class="dados">
-      <p>horario:</p>
-      <p>16:30</p>
-    </div>
-    <div class="dados">
-      <p>Serviço:</p>
-      <p>Banho</p>
-    </div>
-    <div class="dados">
-      <p>Valor:</p>
-      <p>150,00</p>
-    </div>
+    <h2>{{service.pet_name}}</h2>
 
+    <p class="gender">Gênero: {{service.pet_gender}}</p>
+    <p class="age">Idade: {{service.pet_age}} meses</p>
+    <p class="size">Porte: {{service.pet_size}}</p>
+
+    <div class="colors" *ngFor="let color of service.pet_color; let last = last">
+      <p *ngIf="service.pet_color.length === 1">Cor: </p>
+      <p *ngIf="service.pet_color.length > 1 && !last">Cores: </p>
+      <p class="color">{{color}}</p>
+    </div>
 
     <button class="button-1">Aceitar serviço</button>
     <button class="button-2" color=>Cancelar serviço</button>

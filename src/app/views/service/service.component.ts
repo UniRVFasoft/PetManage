@@ -1,22 +1,21 @@
 import { Component, OnInit } from '@angular/core'
 import { ServiceAPI } from './service.service'
+import { ActivatedRoute } from '@angular/router'
+import { Service } from 'src/app/interfaces/service'
 
 @Component({
 	templateUrl: './service.component.html',
 	styleUrls: ['./service.component.css'],
 })
 export class ServiceComponent implements OnInit {
-	constructor(private serviceAPI: ServiceAPI) {}
+	service?: Service
+
+	constructor(private serviceAPI: ServiceAPI, private route: ActivatedRoute) {}
 
 	ngOnInit(): void {
-		this.serviceAPI.getService().subscribe(
-			(response: any) => {
-				const objectID = response.id
-				console.log('id do service: ' + objectID)
-			},
-			(error) => {
-				console.error(error)
-			}
-		)
+		const id = String(this.route.snapshot.paramMap.get('id'))
+		console.log('ID: ' + id)
+
+		this.serviceAPI.getService(id).subscribe((response) => (this.service = response))
 	}
 }
